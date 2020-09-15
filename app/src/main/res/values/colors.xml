@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="black">#000</color>
+    <color name="red_shade_1">#bc3c4c</color>
+    <color name="button_red_shade_gradient_start">#dc1341</color>
+    <color name="button_red_gradient_end">#e83830</color>
+    <color name="white">#fcffff</color>
+    <color name="txt_dark_grey">#434343</color>
+    <color name="txt_light_grey">#929499</color>
+
+    <color name="grey">#a9a2a8</color>
+    <color name="text_gray">#8D8D8D</color>
+    <color name="light_grey_2">#dbdad5</color>
+    <color name="light_blue">#F5F5FD</color>
+    <color name="seek_dk_grey">#656462</color>
+    <color name="home_back">#e9edfc</color>
+</resources>

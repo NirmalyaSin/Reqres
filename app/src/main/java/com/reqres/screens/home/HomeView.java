@@ -4,9 +4,14 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.gms.maps.SupportMapFragment;
 import com.reqres.R;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 public class HomeView {
 
@@ -15,6 +20,10 @@ public class HomeView {
     SupportMapFragment mapFragment;
     LinearLayout ll_map;
      RelativeLayout ll_profile, ll_users;
+     TextView tv_select_profile_pic;
+     CircleImageView iv_profile_image;
+     RecyclerView rv_users;
+
     public HomeView(HomeActivity homeActivity) {
 
         this.homeActivity = homeActivity;
@@ -30,5 +39,8 @@ public class HomeView {
         ll_map = homeActivity.findViewById(R.id.ll_map);
         ll_profile = homeActivity.findViewById(R.id.ll_profile);
         ll_users = homeActivity.findViewById(R.id.ll_users);
+        tv_select_profile_pic = homeActivity.findViewById(R.id.tv_select_profile_pic);
+        iv_profile_image = homeActivity.findViewById(R.id.iv_profile_image);
+        rv_users = homeActivity.findViewById(R.id.rv_users);
     }
 }

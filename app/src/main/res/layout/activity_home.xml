@@ -29,14 +29,92 @@
         <RelativeLayout
             android:id="@+id/ll_profile"
             android:layout_width="match_parent"
-            android:visibility="gone"
+            android:visibility="visible"
             android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_profile_image"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@id/tv_select_profile_pic"
+                android:layout_marginBottom="@dimen/_20sdp"/>
+
+            <TextView
+                android:id="@+id/tv_select_profile_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold"
+                android:text="Click to select your profile picture"
+                android:paddingHorizontal="@dimen/_30sdp"
+                android:gravity="center"
+                />
+            <RelativeLayout
+                android:id="@+id/rl_tv_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_below="@id/tv_select_profile_pic"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+                android:background="@drawable/rounded_border">
+
+                <EditText
+                    android:id="@+id/et_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_alignParentStart="true"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:hint="Enter text"
+                    android:paddingRight="@dimen/_30sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_20sdp"
+                    android:background="@null">
+                </EditText>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_tv_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_below="@id/rl_tv_1"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+                android:background="@drawable/rounded_border">
+
+                <EditText
+                    android:id="@+id/et_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_alignParentStart="true"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_30sdp"
+                    android:hint="Enter Text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_20sdp"
+                    android:background="@null">
+                </EditText>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_tv_2"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+                android:background="@drawable/button_rouded_corner"
+                android:paddingTop="@dimen/_15sdp"
+                android:paddingBottom="@dimen/_15sdp"
+                android:text="SUBMIT"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15sdp" />
 
         </RelativeLayout>
         <RelativeLayout
             android:id="@+id/ll_users"
             android:layout_width="match_parent"
-            android:visibility="visible"
+            android:visibility="gone"
             android:layout_height="match_parent">
 
             <androidx.recyclerview.widget.RecyclerView
